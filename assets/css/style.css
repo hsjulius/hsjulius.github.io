@@ -122,14 +122,13 @@ body{
     width: 400px;
     height: 400px;
     padding: 30px;
-    border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {
     #headshot {
         width: 50%;
         height: auto;
-        margin-bottom: 8%;
+        /* margin-bottom: 8%; */
     }
 }
 
