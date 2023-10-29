@@ -1,3 +1,1 @@
 # hsjulius.github.io
-
-Hi! I'm Hannah, a current senior at Brown University studying computer science. During my time at Brown, I have focused on visual computing as well as security within computer science. I've also taken tons of interesting classes in different departments, such as cognitive linguistic & psychological sciences, history, religious studies, biology, environmental science, political science, and math! Outside of classes, I have loved being able to continue my love of photography by taking photos for different dance groups and acapella groups on campus. 
