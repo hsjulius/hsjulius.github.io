@@ -4,10 +4,11 @@
 <meta http-equiv='cache-control' content='no-cache'> 
 <meta http-equiv='expires' content='0'> 
 <meta http-equiv='pragma' content='no-cache'>
-<script type="text/javascript" src="js/animate.js"></script>
+<script src="script.js"></script>
+<!-- <script type="text/javascript" src="js/animate.js"></script> -->
     <head>
         <title>Hannah Julius</title>
-        <link rel="shortcut icon" href="images/logo.png">
+        <!-- <link rel="shortcut icon" href="images/logo.png"> -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/all.css" rel="stylesheet"> 
@@ -55,7 +56,7 @@
                 <h1> Experience </h1>
                 <div class="project-container">
                     <div class="row">
-                        <div class="card-container"> 
+                        <div class="card-container-experience"> 
                             <a target="_blank" rel="noopener noreferrer" href="https://www.conference-board.org/blog/environmental-social-governance/digital-trust-summit-2023?mkt_tok=MjI1LVdCWi0wMjUAAAGK7_COkC58fL4CZkEyoFlDiLsk2Yomz6yFSU5GGGJZl899bbkq8j0zyAnZoi_TKAr8TV6EgjTD2iOVgs-1n_47GBmmQeSf67AZnsn5ypRRFeyTJeo">
                                 <div class="project-card">
                             
@@ -73,7 +74,7 @@
                             </div>
                         </div>
 
-                        <div class="card-container">
+                        <div class="card-container-experience">
                                 <div class="project-card">
                                 </div>
                             <div class="project-desc">
@@ -86,7 +87,7 @@
                             </div>
                         </div>
 
-                        <div class="card-container">
+                        <div class="card-container-experience">
                             <div class="project-card">
 
                             </div>
@@ -99,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="card-container">
+                    <div class="card-container-experience">
                         <div class="project-card">
 
                         </div>
@@ -126,19 +127,11 @@
         <!-- Projects section -->
             <div class="projects-wrapper" id="projects">
                 <h1> Projects </h1>
-                <div class="project-container">
+                <!-- <div class="project-container"> -->
                     <div class="row">
-                        <div class="card-container">
+                        <div class="card-container"  data-page="poisson.html">
                             <div class="project-card">
-                                <!-- <div class = "project-image">
-                                    <img src="images/poisson/source_01.jpg">
-                                </div>
-                                <div class = "project-image">
-                                    <img src="images/poisson/target_01.jpg">
-                                </div>
-                                <div class="project-image">
-                                    <img src="images/poisson/laplacian_res_img01.jpg">
-                                </div> -->
+                                
                                 
                             </div>
                             <div class="project-desc">
@@ -146,116 +139,91 @@
                                     Poisson Image Blending
                                 </h2>
                                 <p>
-                                    Poisson blending of a source and target image according to a mask.
-                                    <br>
-                                    <br>
-                                    <a href="poisson.html">See result images and more implementation detail here!</a>
+                                    Python implementation of poisson blending of a source and target image according to a mask. Blended videos frame by frame using the same technique. 
+                                    
                                 </p>
                                 
                             </div>
+                            
                         </div>
-                        <div class="card-container">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/hdr/durand.png">
-                                </div>
-                            </div>
+                        <div class="card-container"  data-page="hdr.html">
+                           
                             <div class="project-desc">
                                 <h2>
                                     High Dynamic Range Recovery
                                 </h2>
                                 <p>
-                                
+                                    Implementation of <a href = "http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf">Debevec and Malik 1997</a> as well as <a href ="http://people.csail.mit.edu/fredo/PUBLI/Siggraph2002/DurandBilateral.pdf">Durand 2002</a> papers to recover radiance maps and apply local tone mapping in Python.
                                 </p>
                             </div>
                         </div>
              
-                        <div class="card-container">
-                            <div class="project-card">
-                                <!-- <div class="project-image">
-                                    <img src="images/alignment/result_31421v.jpg">
-                                </div> -->
-                            </div>
+                        <div class="card-container"  data-page="alignment.html">
+                            
                             <div class="project-desc">
                                 <h2>
                                     Image Alignment
                                 </h2>
                                 <p style="font-size: 15px; color:#404040;">
-                                    Alignment of three color channel exposure images to create a final color image.
-                                    <br>
-                                    <br>
-                                    <a href="alignment.html">See result images and more implementation detail here!</a>
+                                    Alignment of three color channel exposure images to create a final color image in python.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="card-container">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
-                                </div>
-                            </div>
+                        <div class="card-container" data-page="veggie.html">
+                            
                             <div class="project-desc">
                                 <h2>
                                     Veggie Tales Rendering
                                 </h2>
                                 <p>
-                                    
+                                    Snowy Veggie Tales scene rendering that implements a skybox, crepuscular rays, obj file parsing, procedurally generated terrain, and bezier curves.
+                                    <br>
+                                    <a href= "https://github.com/suburbiaexe/final-veggies">Repo Linked Here</a>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="card-container">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
-                                </div>
-                            </div>
+                        <div class="card-container" data-page="ray.html">
+                            
                             <div class="project-desc">
                                 <h2>
                                     Raytracer
                                 </h2>
                                 <p>
-                                    
+                                    C++ Raytracer supporting shadows, recursive reflections, and texture mapping.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="card-container">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
-                                </div>
-                            </div>
+                        <div class="card-container"data-page="brush.html">
                             <div class="project-desc">
-                                <h2>
-                                    2D Graphics Project
-                                </h2>
-                                <p>
-                                    
-                                </p>
-                            </div>
+                                    <h2>
+                                        2D Graphics Project
+                                    </h2>
+                                    <p>
+                                        Implementation of Photoshop-like brushes and image filtering in C++.
+                                    </p>
+                                </div>
                         </div>
 
-                        <div class="card-container">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
+                        <div class="card-container" data-page="1430.html">
+             
+                                <div class="project-desc">
+                                    <h2>
+                                        Accessible Trackpad with Face Tracking
+                                    </h2>
+                                    <p>
+                                        Python face landmark tracker to aid those with mobility issues who may not be able to reliably use a trackpad or mouse.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    Accesible Trackpad with Eye Tracking
-                                </h2>
-                                <p>
-                                    
-                                </p>
-                            </div>
+                
+                            
                         </div>
 
 
                     </div>
-                </div>
+                <!-- </div> -->
 
             </div>
         

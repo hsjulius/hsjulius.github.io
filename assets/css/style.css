@@ -8,8 +8,9 @@
     --projects-h2: #434343;
     --projects-h3: #404040;
     --projects-p: #666666;
-    --card-background: #d2d2d2;
-    --white: #c4c4c4;
+    --card-background: #dedede;
+    --white: #c4c4c4l;
+    --card-hover: #bebebe;
 
     --font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -17,6 +18,7 @@
 .menu-bar {
     background-color: var(--background); /* Background color of the menu bar */
     padding: 10px 0; /* Adjust top and bottom padding as needed */
+    /* font: var(--font-family); */
 }
 
 .menu-bar-page {
@@ -26,11 +28,13 @@
 .menu-bar-page ul {
     list-style: none;
     text-align: center;
+    /* font: var(--font-family); */
 }
 
 .menu-bar-page li {
     display: inline;
     margin: 0 20px; /* Adjust horizontal spacing between menu items */
+    
 }
 
 .menu-bar-page a {
@@ -41,11 +45,14 @@
 .menu-bar ul {
     list-style: none;
     text-align: center;
+
 }
 
 .menu-bar li {
     display: inline;
-    margin: 0 20px; /* Adjust horizontal spacing between menu items */
+    margin: 0 10px; /* Adjust horizontal spacing between menu items */
+    font-family: var(--font-family);
+    font-size: 20px;
 }
 
 .menu-bar a {
@@ -81,6 +88,7 @@ h2 {
     /* padding-bottom: 20px; */
     font-size: 35px;
     font-weight: 700;
+    font-family: var(--font-family);
     /* font-style: italic; */
 }
 
@@ -90,6 +98,7 @@ h2 {
 
 li {
     font-size: 20px;
+    font-family: var(--font-family);
 }
 
 @media screen and (max-width: 1000px) {
@@ -165,6 +174,7 @@ li {
 .scroll-arrow a {
     font-size: 45px;
     color: var(--blue);
+    font-family: var(--font-family);
     text-decoration: none;
     transition: all ease-in-out 250ms; 
     display: flex;
@@ -188,6 +198,7 @@ li {
 }
 .menu-item {
     font-size: 35px;
+    font-family: var(--font-family);
     margin-right: 20px;
 }
 
@@ -245,6 +256,7 @@ li {
 #about {
     text-align: left;
     font-size: 12.5px;
+    font-family: var(--font-family);
     letter-spacing: 0.5px;
     line-height: 22px;
     margin-left: 80px;
@@ -268,6 +280,7 @@ hr {
 #projects {
     /* text-align: left; */
     font-size: 12.5px;
+    font-family: var(--font-family);
     /* letter-spacing: 0.5px; */
     line-height: 22px;
     /* margin-left: 80px; */
@@ -308,6 +321,8 @@ hr {
 }
 
 
+
+
 .projects-container {
     /* width: 100%; */
     min-height: 100px;
@@ -316,16 +331,8 @@ hr {
     margin-right: auto;
     margin-left: auto;
     color: var(--background);
-    
 }
 
-.project-card {
-    position: relative;
-    width: 100%; 
-    
-    height: 100px;
-    background-color: var(--blue);
-}
 
 .project-image {
     position: relative;
@@ -368,15 +375,6 @@ hr {
     /* object-position: center; */
 }
 
-.project-desc {
-    position: relative;
-    /* width: 100%; */
-    height: 240px;
-    flex: 0 0 45%;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    color: var(--background);
-}
 
 
 .project-desc ul {
@@ -404,6 +402,35 @@ hr {
     vertical-align: middle;
 }
 
+
+.card-container-experience > * {
+    white-space: normal;    
+}
+
+.card-container-experience {
+    display: flex;
+    flex: 10 0 45%;
+    position: relative;
+    flex-direction: column;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    /* height: 100%; */
+    /* height: 200px; */
+    /* white-space:pre-wrap; */
+    
+    z-index: 1;
+    
+
+    overflow-y: auto;
+    overflow-x:hidden;
+    box-shadow: 5px 5px 0px var(--blue);
+    transition: 0.3s;
+    /* border-radius: 5px; */
+    background-color: var(--card-background);
+}
+
 .card-container > * {
 white-space: normal;
 }
@@ -411,23 +438,53 @@ white-space: normal;
 .card-container {
     display: flex;
     flex: 10 0 45%;
+    position: relative;
     flex-direction: column;
 
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 30px;
     /* height: 100%; */
-    height: 420px;
+    /* height: 200px; */
     /* white-space:pre-wrap; */
+    
+    z-index: 1;
+    
 
     overflow-y: auto;
     overflow-x:hidden;
-    /* box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3); */
-    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 0px var(--blue);
     transition: 0.3s;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: var(--card-background);
 }
+
+
+.project-desc {
+    position: relative;
+    /* width: 100%; */
+    height: 200px;
+    flex: 0 0 45%;
+    /* padding-right: 2.5%; */
+    padding: 2.5%;
+    /* padding-left: 2.5%; */
+    
+    color: var(--background);
+    z-index: 1;
+}
+
+/*
+.project-card {
+    position: absolute;
+    /* width: 100%;  */
+    /* flex: 0 0 45%; */
+    /* z-index: -1;
+    
+    height: 100%;
+    
+    background-color: var(--blue); */
+
+
 /* 
 @media screen and (max-width: 750px) {
     .card-container {
