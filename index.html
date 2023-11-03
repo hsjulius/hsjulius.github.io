@@ -13,14 +13,15 @@
         <link href="assets/css/all.css" rel="stylesheet"> 
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
-    <body>
+    <body class = "main">
         <div class="landing-wrapper">
             <nav class="menu-bar">
+                
                 <div class="menu-item"> 
-                    <!-- <li><a href="#">Home</a></li> -->
-                    <!-- <li><a href="#">Projects</a></li> -->
-                    <!-- <li><a href="#">Portfolio</a></li> -->
-                    <!-- <li><a href="#">Contact</a></li> -->
+                    <li class ="menu-item-list"><a href="#">About</a></li> 
+                    <li class ="menu-item-list"><a href="#experience">Experience</a></li> 
+                    <li class ="menu-item-list"><a href="#projects">Projects</a></li> 
+                    <li class ="menu-item-list"><a href="#photo">Photography</a></li> 
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hannah-julius/">
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
@@ -54,13 +55,11 @@
                 <h1> Experience </h1>
                 <div class="project-container">
                     <div class="row">
-                        
                         <div class="card-container"> 
                             <a target="_blank" rel="noopener noreferrer" href="https://www.conference-board.org/blog/environmental-social-governance/digital-trust-summit-2023?mkt_tok=MjI1LVdCWi0wMjUAAAGK7_COkC58fL4CZkEyoFlDiLsk2Yomz6yFSU5GGGJZl899bbkq8j0zyAnZoi_TKAr8TV6EgjTD2iOVgs-1n_47GBmmQeSf67AZnsn5ypRRFeyTJeo">
                                 <div class="project-card">
-                                    <!-- <div class="project-image">
-                                        <img src="images/dts.png">
-                                    </div> -->
+                            
+                                    
                                 </div>
                             </a>                    
                             <div class="project-desc">
@@ -131,16 +130,26 @@
                     <div class="row">
                         <div class="card-container">
                             <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
+                                <!-- <div class = "project-image">
+                                    <img src="images/poisson/source_01.jpg">
                                 </div>
+                                <div class = "project-image">
+                                    <img src="images/poisson/target_01.jpg">
+                                </div>
+                                <div class="project-image">
+                                    <img src="images/poisson/laplacian_res_img01.jpg">
+                                </div> -->
+                                
                             </div>
                             <div class="project-desc">
                                 <h2>
                                     Poisson Image Blending
                                 </h2>
                                 <p>
-
+                                    Poisson blending of a source and target image according to a mask.
+                                    <br>
+                                    <br>
+                                    <a href="poisson.html">See result images and more implementation detail here!</a>
                                 </p>
                                 
                             </div>
@@ -148,7 +157,7 @@
                         <div class="card-container">
                             <div class="project-card">
                                 <div class="project-image">
-                                    <img src="images/noblis.png">
+                                    <img src="images/hdr/durand.png">
                                 </div>
                             </div>
                             <div class="project-desc">
@@ -160,20 +169,22 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
+             
                         <div class="card-container">
                             <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/brookings.jpg">
-                                </div>
+                                <!-- <div class="project-image">
+                                    <img src="images/alignment/result_31421v.jpg">
+                                </div> -->
                             </div>
                             <div class="project-desc">
                                 <h2>
                                     Image Alignment
                                 </h2>
-                                <p>
-                                    
+                                <p style="font-size: 15px; color:#404040;">
+                                    Alignment of three color channel exposure images to create a final color image.
+                                    <br>
+                                    <br>
+                                    <a href="alignment.html">See result images and more implementation detail here!</a>
                                 </p>
                             </div>
                         </div>
@@ -245,22 +256,35 @@
 
                     </div>
                 </div>
+
+            </div>
+        
             </div>
 
-        </div>
-        <div class="scroll-arrow">
-            <a href=#photo class="page-scroll">
-                <i class="fas fa-chevron-down"></i>
-            </a> 
-        </div>
-        <h1>Here is my photography website!</h1>
-        <div class="container" id="photo">
+            <div class="projects-wrapper" id="projects">
+                <div class="scroll-arrow">
+                    <a href=#photo class="page-scroll">
+                        <i class="fas fa-chevron-down"></i>
+                    </a> 
+                </div>
+                <div class="container" id="photo">
+                    <h1>Here is my photography website!</h1>
+                </div>
+                
+                <div class="container" id="photo">
+                    
+                    <br>
+                    
+                    <iframe src="https://hsjphoto.wixsite.com/hannahjphotography" id="myIframe"></iframe>
+                </div>
+
+            </div>
+
+        
             
-            <br>
-            <iframe src="https://hsjphoto.wixsite.com/hannahjphotography" id="myIframe"></iframe>
-        </div>
-            
-            
+            <footer>
+                <!-- Footer content goes here -->
+            </footer>
             
         
     </body>

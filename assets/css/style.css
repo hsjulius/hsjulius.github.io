@@ -3,10 +3,13 @@
 
 :root {
     --blue: #3fb1cd;
+    --hover-blue: #328ea5;
     --background: #000000;
-    --projects-h2: #2a2a2a;
+    --projects-h2: #434343;
     --projects-h3: #404040;
     --projects-p: #666666;
+    --card-background: #d2d2d2;
+    --white: #c4c4c4;
 
     --font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -14,6 +17,25 @@
 .menu-bar {
     background-color: var(--background); /* Background color of the menu bar */
     padding: 10px 0; /* Adjust top and bottom padding as needed */
+}
+
+.menu-bar-page {
+    background-color: var(--white); /* Background color of the menu bar */
+    padding: 10px 0; /* Adjust top and bottom padding as needed */
+}
+.menu-bar-page ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-bar-page li {
+    display: inline;
+    margin: 0 20px; /* Adjust horizontal spacing between menu items */
+}
+
+.menu-bar-page a {
+    text-decoration: none;
+    color: #fff; /* Text color for menu items */
 }
 
 .menu-bar ul {
@@ -36,10 +58,17 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body.main {
     margin: 0;
-    padding: 0;
+    padding-bottom: 70px;
     background: var(--background);
+    background-size: cover;
+}
+
+body.page {
+    margin: 0;
+    padding-bottom: 200px;
+    background: var(--white);
     background-size: cover;
 }
 
@@ -50,7 +79,8 @@ body{
 
 h2 {
     /* padding-bottom: 20px; */
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 700;
     /* font-style: italic; */
 }
 
@@ -82,14 +112,16 @@ li {
     /* min-width: 400px; */
     /* margin-bottom: 20px; */
     color: #ffffff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 
 .project-desc h2 {
     /* font-family: roboto-condensed, sans-serif; */
     font-family: var(--font-family);
-    font-size: 16px;
-    font-weight: 540;
+    font-size: 18px;
+    font-weight: 550;
     /* margin-bottom: 10px; */
     /* font-style: italic; */
     color: var(--projects-h2);
@@ -112,7 +144,10 @@ li {
     /* font-family: roboto-condensed, sans-serif; */
     font-family: var(--font-family);
     font-size: 15px;
-    color: var(--projects-p)
+    color: var(--projects-p);
+    /* white-space:pre-wrap; */
+    white-space: normal;
+    
 }
 
 .scroll-arrow {
@@ -122,6 +157,10 @@ li {
     position: relative;
     justify-content: center;
 }
+.scroll-arrow a:hover{
+    color: var(--hover-blue);
+}
+
 
 .scroll-arrow a {
     font-size: 45px;
@@ -137,11 +176,12 @@ li {
     align-items: center; /* Center items vertically */
 }
 
-
-
-.menu-item > li {
-    margin: 0 10px; /* Add spacing between list items if desired */
+.menu-bar-page {
+    display: flex;
+    justify-content: right; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
+
 
 .navbar-nav{
    justify-content: center;
@@ -153,16 +193,11 @@ li {
 
 .menu-item a {
     color: var(--blue);
-    align-self: self-end;
-    /* display: flex; Make items in menu-item a flex container */
-    /* list-style: none; Remove the default list style for the <li> elements */
-    /* padding: 0; Remove default padding/margin */
-    /* text-decoration: none; */
-    /* transition: all ease-in-out 250ms; */
+    
 }
 
 .menu-item a:hover{
-    color: #b9b9b9;
+    color: var(--hover-blue);
 }
 
 
@@ -176,7 +211,7 @@ li {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    color: #ffffff;
+    color: var(--card-background);
     /* overflow: auto; */
 
 }
@@ -268,6 +303,7 @@ hr {
 .projects-wrapper h1 {
     text-align: center;
     padding-top: 30px;
+    color: var(--card-background);
     /* justify-content: center; */
 }
 
@@ -285,39 +321,56 @@ hr {
 
 .project-card {
     position: relative;
-    /* width: 50%;  */
+    width: 100%; 
     
     height: 100px;
     background-color: var(--blue);
-    
 }
 
 .project-image {
     position: relative;
-    overflow: hidden;
-    max-height: 100%;
+    /* overflow: hidden; */
+    float:left;
+    /* padding:1%; */
+    /* object-fit: cover; */
+    
     /* max-width: 100%; */
-    height: auto;
-    width: 100%;
-    margin: auto;
+    height: 100px;
+    width: 100px;
+    /* margin: auto; */
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
-    display: block;
+    /* text-align: center; */
+    /* display: block; */
+    /* overflow: hidden; */
+
 }
 
+/* .project-card::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+
+
 .project-image img {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center center;
+    /* top: 0px; */
+    /* left: 0px; */
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    /* display: block; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* object-fit: contain; */
+    /* object-position: center; */
 }
 
 .project-desc {
     position: relative;
-    width: %;
+    /* width: 100%; */
     height: 240px;
     flex: 0 0 45%;
     padding-right: 2.5%;
@@ -351,6 +404,10 @@ hr {
     vertical-align: middle;
 }
 
+.card-container > * {
+white-space: normal;
+}
+
 .card-container {
     display: flex;
     flex: 10 0 45%;
@@ -358,15 +415,18 @@ hr {
 
     margin-right: 15px;
     margin-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     /* height: 100%; */
     height: 420px;
-    overflow: auto;
+    /* white-space:pre-wrap; */
+
+    overflow-y: auto;
+    overflow-x:hidden;
     /* box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3); */
     box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3);
     transition: 0.3s;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: var(--card-background);
 }
 /* 
 @media screen and (max-width: 750px) {
@@ -401,7 +461,7 @@ hr {
 
 iframe {
 /* Add any specific styles for your iframe, such as width and height */
-    width: 80%;
+    width: 90%;
     height: 800px;
     transform: scale(1.0);
 }
