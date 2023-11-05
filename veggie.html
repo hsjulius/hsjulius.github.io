@@ -33,43 +33,43 @@
     
                 <div class = "project-desc-subpage">
                     <h2>
-                        Image Alignment
+                        Veggie Tales Rendering
                     </h2>
                     <p>
-                        For the image alignment project, I implemented a single-scale sliding window alignment search to minimize the sum of square difference between each channel. I also implemented an image pyramid to increase efficiency and improve the offset range. The images often had borders, so I also implemented automatic cropping to crop the final images so there are no solid color borders.
+                        As the final project for my computer graphics class my group and I created a rendered scene using OpenGL and C++. I focused mainly on creating crepuscular rays, a skybox, and adding textures to the procedurally generated terrain. The crepuscular rays included adding three render passes, the first for rendering the sun and occluded shapes, the second for rendering the shapes to the default fbo, and the third to render the shapes with rays from the sun casted. The skybox included creating a cubemap, then texturing each side of the cubemap. 
                     </p>
 
                     <h3>
-                        Below are three examples of rgb channel input images, and the resulting aligned color image! 
+                        Below are demo videos of these features.
                     </h3>
 
                     <div class="image-container-subpage">
                         <div class="image-box-subpage">
-                            <img src="images/alignment/31421v.jpg" width="22%">
-                            <img src="images/alignment/result_31421v.jpg" width="22%">
-                            <div class="caption">Image Set 1</div>
+                            <video width="320" height="240" controls>
+                                <source src="images/veggie/rays.mov" type="video/mp4">
+                                
+                              Your browser does not support the video tag.
+                            </video>
+                            <div class="caption">Crepuscular Rays</div>
                         </div>
-                    </div>
 
-                    <div class="image-container-subpage">
                         <div class="image-box-subpage">
-                            <img src="images/alignment/00911u.jpeg" width="22%">
-                            <img src="images/alignment/result_00911u.jpg" width="22%">
-                            <div class="caption">Image Set 2</div>
+                            <video width="320" height="240" controls>
+                                <source src="images/veggie/skybox.mov" type="video/mp4">
+                                
+                              Your browser does not support the video tag.
+                            </video>
+                            <div class="caption">Skybox</div>
                         </div>
+                       
                     </div>
-
-                    <div class="image-container-subpage">
-                        <div class="image-box-subpage">
-                            <img src="images/alignment/hero.jpg" width="22%">
-                            <img src="images/alignment/result_hero.jpg" width="22%">
-                            <div class="caption">Image Set 3</div>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-
+                    
                   
+                    <br>
+                    <br>
+
+                    
+
 
                 </div>
                 
