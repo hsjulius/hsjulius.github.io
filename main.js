@@ -71,10 +71,26 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ffff } );
-const cube = new THREE.Mesh( geometry, material );
+const cube_geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const cube_material = new THREE.MeshBasicMaterial( { color: 0x00ffff } );
+const cube = new THREE.Mesh( cube_geometry, cube_material );
+cube.position.set(-1,-1,2)
 scene.add( cube );
+
+const cylinder_geometery = new THREE.CylinderGeometry(1, 2, 3);
+const cylinder_material = new THREE.MeshBasicMaterial( { color: 0x328ea5 } );
+const cylinder = new THREE.Mesh( cylinder_geometery, cylinder_material );
+cylinder.position.set(1,-1,1)
+cylinder.scale.set(0.5,0.5,0.5)
+scene.add( cylinder );
+
+const sphere_geometery = new THREE.SphereGeometry(2);
+const sphere_material = new THREE.MeshBasicMaterial( { color: 0x3fb1cd } );
+const sphere = new THREE.Mesh( sphere_geometery, sphere_material );
+sphere.position.set(0,1,1)
+sphere.scale.set(0.5,0.5,0.5)
+scene.add( sphere );
+
 scene.background = new THREE.Color(0x424242);
 
 camera.position.z = 5;
@@ -84,6 +100,12 @@ function animate() {
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
+
+	cylinder.rotation.z += 0.01;
+	cylinder.rotation.y += 0.01;
+
+	sphere.rotation.z += 0.01;
+	sphere.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
 }
