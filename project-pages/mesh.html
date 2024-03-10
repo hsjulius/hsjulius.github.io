@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+<script type="text/javascript" src="js/animate.js"></script>
+    <head>
+        <title>Hannah Julius</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
+    <body class="page">
+        <div class="landing-wrapper">
+            <nav class="menu-bar-page">
+                
+                <div class="menu-item"> 
+                    <li class ="menu-item-list"><a href="../index.html#projects">Back to Projects</a></li> 
+                    
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hannah-julius/">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:hannah_julius@brown.edu"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/hsjulius">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div> 
+            </nav>
+    
+    
+                <div class = "project-desc-subpage">
+                    <h2>
+                        Mesh
+                    </h2>
+                    <p>
+                        For my advanced computer graphics class I wrote a mesh processor to take in an OBJ file with vertices and faces, convert it to a half edge data structure, then perform mesh operations. The mesh operations I wrote include atomic mesh operations (edge split, flip, and collapse), which are used to support loop subdivision, quadric error simplification, and bilateral mesh denoising.
+                    </p>
+
+                    <h3>
+                        Below are example resulting meshes!
+                    </h3>
+
+                    
+
+  
+
+                        <div class="image-container-subpage">
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/icosahedron.png">
+                                <div class="caption">Icosahedron before loop subdivision</div>
+                            </div>
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/subdivide_icosahedron_4.png">
+                                <div class="caption">Icosahedron after 4 iterations of loop subdivision</div>
+                
+                        </div>
+                        <br>
+
+                        <div class="image-container-subpage">
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/sphere.png" >
+                                <div class="caption">Sphere before quadric error simplification</div>
+                            </div>
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/simplify_sphere_full.png">
+                                <div class="caption">Sphere after quadric error simplification</div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="image-container-subpage">
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/cow.png" >
+                                <div class="caption">Cow before quadric error simplification</div>
+                            </div>
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/simplify_cow.png">
+                                <div class="caption">Cow after quadric error simplification (wow! what a simple cow!)</div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="image-container-subpage">
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/noisy_bunny1.png" >
+                                <div class="caption">Super noisy bunny</div>
+                            </div>
+                            <div class="image-box-subpage">
+                                <img src="../images/mesh/denoise_bunny1.png">
+                                <div class="caption">Bunny with no more noise, thanks to bilateral mesh denoising :D</div>
+                            </div>
+                        
+                        </div>
+                        <br><br>
+
+           
+                    <div class="whitespace"></div>
+
+                    
+
+
+                </div>
+                
+
+            </div>
+        
+            </div>
+
+            
+            
+        
+    </body>
+</html>

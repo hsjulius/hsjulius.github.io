@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
+    <div class = "page">
+
 
     <head>
         <title>Hannah Julius</title>
@@ -34,21 +36,21 @@
                     </a>
                 </div> 
             </nav>
+            
     
             <div class="intro">
-                <!-- <img id="headshot" src="images/Hannah_Julius.JPG"> -->
+                <img id="headshot" src="images/IMG_4875.JPG">
                 <div id="about">
                     <div id="desc" role="main">
                         <h1>
                             Hi, I'm Hannah!
                         </h1>
                         <p>
-                            I'm a current senior at <a href = "https://www.brown.edu/">Brown University</a> studying computer science. During my time at Brown, I have focused on visual computing as well as security within computer science. Through experiences in class and internship opportunities, I have become more and more interested in computer graphics. 
+                            I'm a current senior at <a href = "https://www.brown.edu/">Brown University</a> studying computer science. During my time at Brown, I have focused on visual computing as well as security within computer science. Through experiences in class and internship opportunities, I have become fascinated by computer graphics. Some of my recent projects in graphics are shown below! 
                         </p>
         
                         <p>
-                            Outside of classes, I have been able to continue my love of photography by taking photos for different dance groups and acapella groups on campus. 
-                            
+                            Outside of classes, I have been able to continue my love of photography by taking photos for different dance groups and acapella groups on campus (check out my work below!). In my free time I love to crochet, read, bike, and host game nights with friends (I highly recommend the game avalon)! Over the summers, I've also been able to volunteer for various humane societies and foster kittens + cats (huge animal fan, if you couldn't tell by the photo).
                         </p>
                     </div>
                 </div>
@@ -137,6 +139,48 @@
                 <h1> Projects </h1>
                 <!-- <div class="project-container"> -->
                     <div class="row">
+                        <div class="card-container"  data-page="project-pages/mesh.html">
+                            <div class="project-card">
+
+                            </div>
+                            <div class="project-desc">
+                                <h2>
+                                    Mesh
+                                </h2>
+                                <img src="images/mesh/simplify_cow.png" alt="Image 2">
+                                <p>
+                                    Processes an OBJ mesh into a half edge data structure in order to support mesh processing functions. Supports loop subdivision for dividing triangle meshes into more complex structures, quadric error simplification to simplify mesh structures, and bilateral mesh denoising to decrease noise on meshes. 
+                                </p>
+                                <div class="languages">
+
+                                </div>
+                            </div>
+                        </div>
+    
+
+      
+                        <div class="card-container"  data-page="project-pages/path.html">
+                            <div class="project-card">
+                                
+                                
+                            </div>
+                            <div class="project-desc">
+                                <h2>
+                                    Path Tracing
+                                </h2>
+                                <img src="images/path/cornell_box_full_lighting.png" alt="Image 2">
+                                <p>
+                                    Physically based renderer implemented in C++. Supports diffuse, glossy specular, mirror reflective, and refractive brdfs. Accumulates direct and indirect lighting to reduce noise, and uses russian roulette path termination to randomly terminate tracing.
+                                    
+                                </p>
+                                <div class="languages">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    
                         <div class="card-container"  data-page="project-pages/poisson.html">
                             <div class="project-card">
                                 
@@ -146,6 +190,7 @@
                                 <h2>
                                     Poisson Image Blending
                                 </h2>
+                                <img src="images/poisson/poisson_res_img01.jpg" alt="Image 2">
                                 <p>
                                     Implementation of poisson blending of a source and target image according to a mask. Blended videos frame by frame using the same technique. 
                                     
@@ -159,12 +204,14 @@
                             </div>
                             
                         </div>
+     
                         <div class="card-container"  data-page="project-pages/hdr.html">
                            
                             <div class="project-desc">
                                 <h2>
                                     High Dynamic Range Recovery
                                 </h2>
+                                <img src="images/hdr/durand 2.png" alt="Image 2">
                                 <p>
                                     Implementation of <a href = "http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf">Debevec and Malik 1997</a> as well as <a href ="http://people.csail.mit.edu/fredo/PUBLI/Siggraph2002/DurandBilateral.pdf">Durand 2002</a> papers to recover radiance maps and apply local tone mapping in Python.
                                 </p>
@@ -177,8 +224,9 @@
                                 <h2>
                                     Image Alignment
                                 </h2>
+                                <img src="images/alignment/result_hero.jpg" alt="Image 2">
                                 <p style="font-size: 15px; color:#404040;">
-                                    Alignment of three color channel exposure images to create a final color image in python.
+                                    Alignment of three color channel exposure images to create a final color image in Python.
                                 </p>
                             </div>
                         </div>
@@ -189,6 +237,7 @@
                                 <h2>
                                     Veggie Tales Rendering
                                 </h2>
+                                <img src="images/veggie/Screenshot 2024-03-10 at 6.54.52 PM.png" alt="Image 2">
                                 <p>
                                     Snowy Veggie Tales scene rendering that implements a skybox, crepuscular rays, obj file parsing, procedurally generated terrain, and bezier curves.
                                     <br>
@@ -203,6 +252,7 @@
                                 <h2>
                                     Raytracer
                                 </h2>
+                                <img src="images/ray/my spot.png" alt="Image 2">
                                 <p>
                                     C++ Raytracer supporting shadows, recursive reflections, and texture mapping.
                                 </p>
@@ -214,25 +264,27 @@
                                     <h2>
                                         2D Graphics Project
                                     </h2>
+                                    <img src="images/brush/smudge.png" alt="Image 2">
                                     <p>
                                         Implementation of Photoshop-like brushes and image filtering in C++.
                                     </p>
                                 </div>
                         </div>
 
-                        <div class="card-container" data-page="project-pages/1430.html">
+                        <!-- <div class="card-container" data-page="project-pages/1430.html">
              
                                 <div class="project-desc">
                                     <h2>
                                         Accessible Trackpad with Face Tracking
                                     </h2>
+                                    
                                     <p>
                                         Python face landmark tracker to aid those with mobility issues who may not be able to reliably use a trackpad or mouse.
                                     </p>
                                 </div>
                 
                             
-                        </div>
+                        </div> -->
 
 
                     </div>
@@ -269,4 +321,7 @@
             
         
     </body>
+
+    </div>
+
 </html>
