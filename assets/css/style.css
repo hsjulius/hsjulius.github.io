@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/pha5hoh.css");
 
+
+/* -------------------------------------------  Overall page ----------------------------------------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -12,8 +14,9 @@ body{
 }
 
 :root {
-    --blue: #3fb1cd;
-    --hover-blue: #328ea5;
+    --blue: #44a0e9;
+    --light-blue: #70b6ee;
+    --hover-blue: #156fb6;
     --background: #424242;
     --projects-h2: #434343;
     --projects-h3: #404040;
@@ -32,99 +35,6 @@ body{
     --font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.image-container-subpage {
-    max-width: 100%; 
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-}
-
-.image-box-subpage {
-    flex: 1; 
-    text-align: center; 
-    font-family: var(--font-family);
-    margin: 10px; 
-}
-
-#animation-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-.image-box-subpage img {
-    max-width: 100%; 
-    height: auto; 
-    padding-bottom: 10px;
-}
-
-.caption {
-    margin-top: 5px; 
-    font-family: var(--font-family);
-    color: var(--page-p);
-}
-
-
-.menu-bar {
-    background-color: var(--background); /* Background color of the menu bar */
-    padding: 10px 10px; /* Adjust top and bottom padding as needed */
-    /* font: var(--font-family); */
-}
-
-.menu-bar-page {
-    background-color: var(--white); /* Background color of the menu bar */
-    padding: 10px 0; /* Adjust top and bottom padding as needed */
-}
-.menu-bar-page ul {
-    list-style: none;
-    text-align: center;
-    /* font: var(--font-family); */
-}
-
-.menu-bar-page li {
-    display: inline;
-    /* margin: 0 10px;  */
-    
-}
-a {
-    color: #3fb1cd;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--hover-blue);
-    /* text-decoration: none; */
-}
-
-.menu-bar-page a {
-    text-decoration: none;
-    color: #fff; /* Text color for menu items */
-}
-
-.menu-bar ul {
-    list-style: none;
-    /* text-align: center; */
-}
-
-.menu-bar li {
-    display: inline;
-    margin: 0 10px; 
-    font-family: var(--font-family);
-    font-size: 15px;
-}
-
-.menu-bar a {
-    text-decoration: none;
-    color: #fff; 
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
-
 body.main {
     margin: 0;
     padding-bottom: 70px;
@@ -139,10 +49,187 @@ body.page {
     background-size: cover;
 }
 
+
+
+/* -------------------------------------------  Intro section  ----------------------------------------------------- */
+.intro h1{
+    font-size: 30px;
+}
+
+.intro p{
+    font-size: 15px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; 
+    text-align: center;
+    margin: 0 auto; 
+    width: 75%; 
+    padding-top: 3%;
+  
+}
+
+
+@media screen and (max-width: 667px) {
+    .intro {
+        padding: 10px; /* Adjust padding for better spacing on smaller screens */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro {
+      margin-top: 2%;
+      flex-direction: column;
+      top: 50%;
+      left: 40%;
+    }
+}
+
+#headshot {
+    width: 30%;
+    max-width: 30%;
+    padding-right: 50px;
+    /* border-radius: 50%; */
+}
+
+
+
+#about {
+    text-align: center;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+
+    /* margin-left: 80px; */
+    min-width: 350px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: right; */
+    color: var(--page-p);
+    /* overflow:visible; */
+}
+
+hr {
+    position: sticky;
+    width: 100%; /* Set the line width to match the container width */
+    bottom: 0; /* Position the line at the bottom of the container */
+    border: none; /* Remove the default border */
+    height: 2px; /* Line thickness */
+    background-color: #333; /* Line color */
+}
+
+/* -------------------------------------------  Header image ----------------------------------------------------- */
+.image-container-subpage {
+    max-width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.image-box-subpage {
+    flex: 1; 
+    text-align: center; 
+    font-family: var(--font-family);
+    margin: 10px; 
+}
+
+/* #animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
+.image-box-subpage img {
+    max-width: 100%; 
+    height: auto; 
+    padding-bottom: 10px;
+}
+
+.caption {
+    margin-top: 5px; 
+    font-family: var(--font-family);
+    color: var(--page-p);
+}
+
+
+
+/* -------------------------------------------  Top menu  + some of intro ---------------------------------------------- */
+
 .landing-wrapper  {
     width: 100%;
     height: 100%;
 }
+
+a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-blue);
+}
+
+
+.menu-item {
+    font-size: 35px;
+    font-family: var(--font-family);
+    margin-right: 20px;
+    color: var(--blue);
+}
+
+
+.menu-item a {
+    color: var(--light-blue); 
+}
+
+.menu-item a:hover{
+    color: var(--hover-blue);
+}
+
+.menu-bar-page {
+    display: flex;
+    justify-content: right; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.menu-bar {
+    background-color: var(--background); /* Background color of the menu bar */
+    padding: 30px 30px; 
+}
+
+.menu-bar-page {
+    background-color: var(--white); /* Background color of the menu bar */
+    padding: 10px 0; 
+}
+.menu-bar-page ul {
+    list-style: none;
+    text-align: center;
+    font: var(--font-family);
+}
+
+.menu-bar-page li {
+    display: inline;
+    /* margin: 0 10px;  */
+    
+}
+
+.menu-bar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 0 10px; 
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
 
 h2 {
     /* padding-bottom: 20px; */
@@ -152,9 +239,9 @@ h2 {
     /* font-style: italic; */
 }
 
-/* .menu {
+.menu {
     margin-top: 20px;
-} */
+}
 
 .menu {
     margin-top: 20px;
@@ -192,7 +279,7 @@ i {
     padding-bottom: 10px;
 }
 
-
+/* -------------------------------------------  Projects  ----------------------------------------------------- */
 
 .project-desc-subpage h2 {
     /* font-family: roboto-condensed, sans-serif; */
@@ -227,7 +314,6 @@ i {
     white-space: normal;
     
 }
-
 
 .project-desc h2 {
     /* font-family: roboto-condensed, sans-serif; */
@@ -286,17 +372,10 @@ i {
 }
 
 
-/* .scroll-arrow {
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    position: relative;
-    justify-content: center;
-}
-
+/* -------------------------------------------  Scroll arrow  ----------------------------------------------------- */
 .scroll-arrow a:hover{
     color: var(--hover-blue);
-} */
+}
 
 .scroll-arrow {
     width: 100%;
@@ -304,25 +383,6 @@ i {
     margin-bottom: 20%;
     position:sticky;
 }
-
-.scroll-arrow a {
-    font-size: 45px;
-    color: #07637a;
-    text-decoration: none;
-    transition: all ease-in-out 250ms; 
-    display: flex;
-    justify-content: center;
-}
-
-
-/* figcaption {
-    font-family: var(--font-family);
-    background-color: black;    
-    color: white;
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-} */
 
 
 
@@ -340,8 +400,7 @@ i {
     display: flex;
     justify-content: left; 
     align-items: center; 
-}
-
+} 
 .menu-bar-b {
     display: flex;
     justify-content: right; 
@@ -349,147 +408,14 @@ i {
 }
 
 
-
-
-.menu-bar-page {
-    display: flex;
-    justify-content: right; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-}
-
-
 .navbar-nav{
    justify-content: center;
-}
-.menu-item {
-    font-size: 35px;
-    font-family: var(--font-family);
-    margin-right: 20px;
 }
 
 .whitespace {
     height: 50px; /* Adjust the height as needed */
     width: 100%;
     background-color: var(--background); /* Set the background color to match your page */
-}
-.menu-item a {
-    color: var(--blue); 
-}
-
-.menu-item a:hover{
-    color: var(--hover-blue);
-}
-
-
-.intro h1{
-    font-size: 30px;
-}
-
-.intro p{
-    font-size: 15px;
-}
-
-
-/* .intro {
-    margin: 10px 20px; 
-    display: flex;
-    align-items: center; 
-    padding: 100px;
-    color: var(--card-background);
-} */
-
-/* .intro {
-    margin: 10px 20px; 
-    display: flex;
-    align-items: center; 
-    padding: 100px;
-    color: var(--card-background);
-} */
-.intro {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center; */
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; /* Adjust as needed */
-    text-align: center;
-    margin: 0 auto; /* Centers the flex container */
-    width: 75%; /* Adjust width as needed */
-    padding-top: 3%;
-
-
-    /* margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    width: 75%;
-    
-    justify-content: center; */
-  
-}
-
-
-@media screen and (max-width: 667px) {
-    .intro {
-        padding: 10px; /* Adjust padding for better spacing on smaller screens */
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .intro {
-      margin-top: 2%;
-      flex-direction: column;
-      top: 50%;
-      left: 40%;
-    }
-}
-
-#headshot {
-    width: 30%;
-    max-width: 30%;
-    padding-right: 50px;
-    /* border-radius: 50%; */
-}
-
-
-
- /* #headshot {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-    padding: 30px;
-   
-    
-
-} */
-
-
-#about {
-    text-align: center;
-    font-size: 12.5px;
-    letter-spacing: 0.5px;
-
-    /* margin-left: 80px; */
-    min-width: 350px;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: right; */
-    color: var(--page-p);
-    /* overflow:visible; */
-}
-
-hr {
-    position: sticky;
-    width: 100%; /* Set the line width to match the container width */
-    bottom: 0; /* Position the line at the bottom of the container */
-    border: none; /* Remove the default border */
-    height: 2px; /* Line thickness */
-    background-color: #333; /* Line color */
 }
 
 #projects {
@@ -607,15 +533,8 @@ hr {
     background-color: transparent;
 }
 
-.project-desc a:hover {
+.card-container:hover {
     color: black;
-}
-
-.project-link {
-    float: right;
-    margin-right: 8px;
-    font-size: 30px;
-    vertical-align: middle;
 }
 
 
@@ -685,6 +604,9 @@ white-space: normal;
 }
 
 
+
+
+
 .project-desc {
     position: relative;
     height: 200px;
@@ -703,26 +625,6 @@ white-space: normal;
     z-index: 1;
 }
 
-
-/*
-.project-card {
-    position: absolute;
-    /* width: 100%;  */
-    /* flex: 0 0 45%; */
-    /* z-index: -1;
-    
-    height: 100%;
-    
-    background-color: var(--blue); */
-
-
-/* 
-@media screen and (max-width: 750px) {
-    .card-container {
-        flex: 0 0 90%;
-        margin-bottom: 40px;
-    }
-} */
 
 .row {
     display: flex;
