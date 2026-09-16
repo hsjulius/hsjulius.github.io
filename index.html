@@ -1,356 +1,348 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <div class = "page">
-
-
     <head>
         <title>Hannah Julius</title>
         <meta charset="UTF-8">
-        <meta http-equiv='cache-control' content='no-cache'> 
-        <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'>
-        <script type="module" src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/css/all.css" rel="stylesheet"> 
+        <meta name="description" content="Hannah Julius — software engineer focused on visual computing, graphics, and security.">
+        <link href="assets/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="script.js" defer></script>
     </head>
-    <body class = "main">
-        <div id="animation-container">
-            <script type="module" src="main.js"></script>
-        </div>
-       
-        <div class="landing-wrapper">
-            <nav class="menu-bar">
-                
-                <div class="menu-item"> 
-                    <li><a href="#">About</a></li> 
-                    <li><a href="#experience">Experience</a></li> 
-                    <li><a href="#projects">Projects</a></li> 
-                    <li><a href="#photo">Photography</a></li> 
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hannah-julius/">
+    <body class="main">
+        <div class="bg-glow" aria-hidden="true"></div>
+
+        <!-- Nav -->
+        <header class="nav" id="top">
+            <div class="nav-inner">
+                <a class="nav-logo" href="#top">hannah<span>julius</span></a>
+                <nav class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#photo">Photography</a>
+                </nav>
+                <div class="nav-social">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hannah-julius/" aria-label="LinkedIn">
                         <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="mailto:hannah_julius@brown.edu"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/hsjulius">
+                    <a href="mailto:hannah_julius@brown.edu" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/hsjulius" aria-label="GitHub">
                         <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
-                </div> 
-            </nav>
-            
-    
-            <div class="intro">
-                <img id="headshot" src="images/IMG_4875.jpg">
-                <div id="about">
-                    <div id="desc" role="main">
-                        <h1>
-                            Hi, I'm Hannah!
-                        </h1>
-                        <p>
-                            I'm a recent graduate from <a href = "https://www.brown.edu/">Brown University</a> where I studied computer science. During my time at Brown, I  focused on visual computing as well as security. Hopefully this website showcases the work I've done well, and gives a better idea of who I am! 
-                        </p>
-        
-                        <p>
-                            Outside of classes, I have been able to continue my love of photography by taking photos for different dance groups and acapella groups on campus (check out my work below!). In my free time I love to hike, crochet, read, bike, and host game nights with friends (I highly recommend the game Avalon)! Over the summers, I've also been able to volunteer for various humane societies and foster kittens + cats (huge animal fan, if you couldn't tell by the photo).
-                        </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero / About -->
+            <section class="hero" id="about">
+                <div class="hero-photo reveal">
+                    <img id="headshot" src="images/IMG_4875.jpg" alt="Hannah holding a cat">
+                </div>
+                <div class="hero-text reveal">
+                    <p class="eyebrow">XR GPU Driver Software Engineer &middot; Qualcomm</p>
+                    <h1>Hi, I'm <span class="gradient-text">Hannah</span>!</h1>
+                    <p class="lede">
+                        I'm a software engineer on the Graphics Software XR team at <a href="https://www.qualcomm.com/">Qualcomm</a>, where I work on motion estimation. I graduated from <a href="https://www.brown.edu/">Brown University</a> in 2024 with an ScB in computer science, where I focused on visual computing as well as security. Hopefully this website showcases the work I've done well, and gives a better idea of who I am!
+                    </p>
+                    <p>
+                        I've always loved photography, and at Brown I took photos for different dance groups and acapella groups on campus (check out my work below!). In my free time I love to read, hike, crochet, and host game nights with friends (I highly recommend the game Avalon)! I've also volunteered with various humane societies and fostered kittens + cats (huge animal fan, if you couldn't tell by the photo).
+                    </p>
+                    <div class="chips">
+                        <span class="chip">Graphics</span>
+                        <span class="chip">XR</span>
+                        <span class="chip">GPU Drivers</span>
+                        <span class="chip">Computer Vision</span>
+                        <span class="chip">Security</span>
+                        <span class="chip">Photography</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="btn btn-ghost" href="mailto:hsjulius@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</a>
                     </div>
                 </div>
-                
-            </div>
-            <div class="scroll-arrow">
-                <a href=#experience class="page-scroll">
-                    <i class="fas fa-chevron-down"></i>
-                </a> 
-            </div>
+                <a href="#experience" class="scroll-arrow" aria-label="Scroll to experience">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+            </section>
 
+            <!-- Experience -->
+            <section class="section" id="experience">
+                <div class="section-head reveal">
+                    <span class="section-num">01</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
 
-            <div class="projects-wrapper" id="experience">
-                <h1> Experience </h1>
-                <div class="project-container">
-                    <div class="row">
-                        <div class="card-container-experience"> 
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.conference-board.org/blog/environmental-social-governance/digital-trust-summit-2023?mkt_tok=MjI1LVdCWi0wMjUAAAGK7_COkC58fL4CZkEyoFlDiLsk2Yomz6yFSU5GGGJZl899bbkq8j0zyAnZoi_TKAr8TV6EgjTD2iOVgs-1n_47GBmmQeSf67AZnsn5ypRRFeyTJeo">
-                                <div class="project-card">
-                            
-                                    
+                <ol class="timeline">
+                    <li class="timeline-item timeline-item-current reveal">
+                        <div class="exp-card exp-card-featured">
+                            <div class="exp-head">
+                                <div>
+                                    <span class="exp-badge">Current</span>
+                                    <h3>XR GPU Driver Software Engineer</h3>
+                                    <p class="exp-org">Qualcomm &middot; Graphics Software XR Team</p>
                                 </div>
-                            </a>                    
-                            <div class="project-desc">
-                                <h2> Apple Software Engineering Intern </h2>
-                                <h3> Game Tech Team - Cupertino, CA </h3>
-
-                                <p>
-                                    I worked on an accessibility project for improving interactions with <b>USD files</b> in QuickLook and Preview. During my internship I collaborated with colleagues in different areas of the company to come up with <b>user stories</b> and features that would be important to add to the project. I worked in <b>Objective-C</b> to add features using the <b>GCController framework</b>.
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div class="card-container-experience">
-                                <div class="project-card">
+                                <div class="exp-meta">
+                                    <span class="exp-date">Mar 2025 &ndash; Present</span>
                                 </div>
-                            <div class="project-desc">
-                                <h2>Qualcomm Software Engineering Intern</h2>
-                                <h3>VR Team - Boxborough, MA</h3>
-                                <p>
-                                    During my time at Qualcomm I worked on two main projects. The first was writing a <b>Python</b> script to test an ML scene classification algorithm used to improve VR performance by toggling spacewarp on and off. I used <b>FFmpeg</b> to capture frames from different VR games to use as test cases. Within the Android test app, I created <b>setprops</b> to log difference hash values between frames, and used <b>ImageMagick</b> to create visual representations of the outputs.
-                                    The second project involved gathering representative frames from popular VR games to be used for streamlining performance testing. I used <b>scopelogs</b> as well as <b>Renderdoc for Oculus</b> to gather information on app workload, as well as to analyze trends in rendering strategies. 
-                                </p>
                             </div>
-                        </div>
-
-                        <div class="card-container-experience">
-                            <div class="project-card">
-
-                            </div>
-                        <div class="project-desc">
-                            <h2>Brown XR Hub</h2>
-                            <h3>Working as a developer on the Phantom Limb Project</h3>
                             <p>
-                                Our project is a collaboration between the XR Hub and Design x Health to create an immersive experience to aid amputees experiencing phantom limb pain. The project involves using <b>Unity</b> to do hand tracking to visualize a phantom arm, fingers, or other ligaments that may have been amputated, and using the phantom limb to play interactive VR games. We plan to create immersive VR experiences that in the end will hopefully work to help reduce the effects of phantom limb pain. 
+                                After interning with Qualcomm's VR graphics team in 2022, I came back full time to the <b>Graphics Software XR Team</b>, where I work on the GPU driver side of XR graphics. Most of my work centers on the <b>MotionEngine</b>, estimating how content moves between rendered frames and using that motion to synthesize new frames, so gaming experiences can look smoother than what the application renders on its own.
                             </p>
-                        </div>
-                    </div>
 
-                    <div class="card-container-experience">
-                        <div class="project-card">
-
-                        </div>
-                    <div class="project-desc">
-                        <h2>CSCI1660 Teaching Assistant</h2>
-                        <h3>Teaching Assistant for Computer Systems Security</h3>
-                        <p>
-                            I worked with TAs to improve assignments, as well as held office hours to help students with conceptual content questions, as well as creating exploits or debugging code.
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="scroll-arrow">
-            <a href=#projects class="page-scroll">
-                <i class="fas fa-chevron-down"></i>
-            </a> 
-        </div>
-
-        <!-- Projects section -->
-            <div class="projects-wrapper" id="projects">
-                <h1> Projects </h1>
-                <!-- <div class="project-container"> -->
-                    <!-- <div class="row"> -->
-                        
-
-                    <div class="row">
-                        <div class="card-container"  data-page="project-pages/fem.html">
-                            <div class="project-card">
-
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    FEM
-                                </h2>
-                                <img src="images/fem/fem.png" alt="Image 2">
-                                <p>
-                                    Deformable object simulation including force computation, time integration, and simple collision resolution.
-                                </p>
-                                <div class="languages">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-container"  data-page="project-pages/mesh.html">
-                            <div class="project-card">
-
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    Mesh
-                                </h2>
-                                <img src="images/mesh/simplify_cow.png" alt="Image 2">
-                                <p>
-                                    Processes an OBJ mesh into a half-edge data structure in order to support mesh processing functions. Supports loop subdivision for dividing triangle meshes into more complex structures, quadric error simplification to simplify mesh structures, and bilateral mesh denoising to decrease noise on meshes. 
-                                </p>
-                                <div class="languages">
-
-                                </div>
-                            </div>
-                        </div>
-    
-
-      
-                        <div class="card-container"  data-page="project-pages/path.html">
-                            <div class="project-card">
-                                
-                                
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    Path Tracing
-                                </h2>
-                                <img src="images/path/cornell_box_full_lighting.png" alt="Image 2">
-                                <p>
-                                    Physically based renderer implemented in C++. Supports diffuse, glossy specular, mirror reflective, and refractive brdfs. Accumulates direct and indirect lighting to reduce noise, and uses Russian Roulette path termination to randomly terminate tracing.
-                                    
-                                </p>
-                                <div class="languages">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-container"  data-page="project-pages/pano.html">
-                            <div class="project-card">
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    Panorama Restitching
-                                </h2>
-                                <img src="images/pano/panorama_5_cylindrical.png" width = 3000px>
-                                <p>
-                                    Implementation of automated image stitching to create panoramas in Python.
-                                    
-                                </p>
-                                <div class="languages">
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="card-container"  data-page="project-pages/poisson.html">
-                            <div class="project-card">
-                            </div>
-                            <div class="project-desc">
-                                <h2>
-                                    Poisson Image Blending
-                                </h2>
-                                <img src="images/poisson/poisson_res_img01.jpg" alt="Image 2">
-                                <p>
-                                    Implementation of poisson blending of a source and target image according to a mask. Blended videos frame by frame using the same technique. 
-                                    
-                                </p>
-                                <div class="languages">
-                                </div>
-                            </div>
-                        </div>
-     
-                        <div class="card-container"  data-page="project-pages/hdr.html">
-                           
-                            <div class="project-desc">
-                                <h2>
-                                    High Dynamic Range Recovery
-                                </h2>
-                                <img src="images/hdr/durand 2.png" alt="Image 2">
-                                <p>
-                                    Implementation of <a href = "http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf">Debevec and Malik 1997</a> as well as <a href ="http://people.csail.mit.edu/fredo/PUBLI/Siggraph2002/DurandBilateral.pdf">Durand 2002</a> papers to recover radiance maps and apply local tone mapping in Python.
-                                </p>
-                            </div>
-                        </div>
-             
-                        <div class="card-container"  data-page="project-pages/alignment.html">
-                            
-                            <div class="project-desc">
-                                <h2>
-                                    Image Alignment
-                                </h2>
-                                <img src="images/alignment/result_hero.jpg" alt="Image 2">
-                                <p style="font-size: 15px; color:#404040;">
-                                    Alignment of three color channel exposure images to create a final color image in Python.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card-container" data-page="project-pages/veggie.html">
-                            
-                            <div class="project-desc">
-                                <h2>
-                                    Veggie Tales Rendering
-                                </h2>
-                                <img src="images/veggie/Screenshot 2024-03-10 at 6.54.52 PM.png" alt="Image 2">
-                                <p>
-                                    Snowy Veggie Tales scene rendering that implements a skybox, crepuscular rays, obj file parsing, procedurally generated terrain, and bezier curves.
-                                    <br>
-                                    <a href= "https://github.com/suburbiaexe/final-veggies">Repo Linked Here</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card-container" data-page="project-pages/ray.html">
-                            
-                            <div class="project-desc">
-                                <h2>
-                                    Raytracer
-                                </h2>
-                                <img src="images/ray/my spot.png" alt="Image 2">
-                                <p>
-                                    C++ Raytracer supporting shadows, recursive reflections, and texture mapping.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card-container" data-page="project-pages/brush.html">
-                            <div class="project-desc">
-                                    <h2>
-                                        2D Graphics Project
-                                    </h2>
-                                    <img src="images/brush/smudge.png" alt="Image 2">
+                            <!-- Detail panels hidden for now. Remove this comment wrapper to show them again.
+                            <div class="exp-highlights">
+                                <div class="highlight">
+                                    <div class="highlight-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+                                    <h4>MotionEngine interpolation</h4>
                                     <p>
-                                        Implementation of Photoshop-like brushes and image filtering in C++.
+                                        I led key portions of interpolation development end to end, from <b>algorithm research</b> through <b>customer-ready delivery</b>. That included writing the <b>vector propagation compute passes</b> that carry motion information across the frame, building <b>hole-filling pipelines</b> for regions where the warped image has no valid source pixels, and evaluating output quality along the way.
                                     </p>
                                 </div>
-                        </div>
-
-                        <div class="card-container" data-page="project-pages/1430.html">
-             
-                                <div class="project-desc">
-                                    <h2>
-                                        Accessible Trackpad with Face Tracking
-                                    </h2>
-                                    
+                                <div class="highlight">
+                                    <div class="highlight-icon"><i class="fas fa-play-circle" aria-hidden="true"></i></div>
+                                    <h4>Vulkan validation &amp; debug player</h4>
                                     <p>
-                                        Python face landmark tracker to aid those with mobility issues who may not be able to reliably use a trackpad or mouse.
+                                        I built a <b>cross-platform Vulkan</b> video playback application for validating and debugging MotionEngine. It runs on both <b>Android and Windows</b>, making it possible to develop, test, and visually inspect interpolation results without being tied to a single device.
                                     </p>
                                 </div>
-                
-                            
+                                <div class="highlight">
+                                    <div class="highlight-icon"><i class="fas fa-flask" aria-hidden="true"></i></div>
+                                    <h4>Experimentation frameworks</h4>
+                                    <p>
+                                        I designed and implemented frameworks for running interpolation experiments systematically, so the team can compare <b>algorithms</b>, <b>hole-filling strategies</b>, <b>quality baselines</b>, and <b>performance trade-offs</b> side by side instead of one-off.
+                                    </p>
+                                </div>
+                                <div class="highlight">
+                                    <div class="highlight-icon"><i class="fas fa-handshake" aria-hidden="true"></i></div>
+                                    <h4>Customer &amp; cross-team support</h4>
+                                    <p>
+                                        Beyond feature work, I deliver customer-facing <b>performance analysis</b>, tooling, and bug fixes, and support partner teams across the company, often driving several projects at once from concept through implementation.
+                                    </p>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="tags"><span>Vulkan</span><span>Compute Shaders</span><span>Frame Interpolation</span><span>Vector Propagation</span><span>GPU Drivers</span><span>Android</span><span>Windows</span></div>
                         </div>
+                    </li>
 
+                    <li class="timeline-item reveal">
+                        <div class="exp-card">
+                            <div class="exp-head">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="exp-org">Apple &middot; Game Tech Team</p>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date">May 2023 &ndash; Aug 2023</span>
+                                    <span class="exp-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cupertino, CA</span>
+                                </div>
+                            </div>
+                            <p>
+                                I worked on an accessibility project for improving interactions with <b>USD files</b> in QuickLook and Preview. During my internship I collaborated with colleagues in different areas of the company to come up with <b>user stories</b> and features that would be important to add to the project. I worked in <b>Objective-C</b> to add features using the <b>GCController framework</b>.
+                            </p>
+                            <div class="tags"><span>Objective-C</span><span>USD</span><span>GCController</span><span>Accessibility</span></div>
+                        </div>
+                    </li>
 
+                    <li class="timeline-item reveal">
+                        <div class="exp-card">
+                            <div class="exp-head">
+                                <div>
+                                    <h3>Teaching Assistant, CSCI 1660</h3>
+                                    <p class="exp-org">Brown University &middot; Computer Systems Security</p>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date">Jan 2023 &ndash; May 2023</span>
+                                    <span class="exp-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Providence, RI</span>
+                                </div>
+                            </div>
+                            <p>
+                                I worked with TAs to improve assignments, as well as held office hours to help students with conceptual content questions, as well as creating exploits or debugging code.
+                            </p>
+                            <div class="tags"><span>Security</span><span>Teaching</span></div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="exp-card">
+                            <div class="exp-head">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="exp-org">Qualcomm &middot; VR Team</p>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date">May 2022 &ndash; Aug 2022</span>
+                                    <span class="exp-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Boxborough, MA</span>
+                                </div>
+                            </div>
+                            <p>
+                                During my time at Qualcomm I worked on two main projects. The first was writing a <b>Python</b> script to test an ML scene classification algorithm used to improve VR performance by toggling spacewarp on and off. I used <b>FFmpeg</b> to capture frames from different VR games to use as test cases. Within the Android test app, I created <b>setprops</b> to log difference hash values between frames, and used <b>ImageMagick</b> to create visual representations of the outputs.
+                            </p>
+                            <p>
+                                The second project involved gathering representative frames from popular VR games to be used for streamlining performance testing. I used <b>scopelogs</b> as well as <b>Renderdoc for Oculus</b> to gather information on app workload, as well as to analyze trends in rendering strategies.
+                            </p>
+                            <div class="tags"><span>Python</span><span>FFmpeg</span><span>ImageMagick</span><span>RenderDoc</span><span>Android</span></div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <div class="exp-card">
+                            <div class="exp-head">
+                                <div>
+                                    <h3>Developer, Phantom Limb Project</h3>
+                                    <p class="exp-org">Brown XR Hub</p>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Providence, RI</span>
+                                </div>
+                            </div>
+                            <p>
+                                Our project is a collaboration between the XR Hub and Design x Health to create an immersive experience to aid amputees experiencing phantom limb pain. The project involves using <b>Unity</b> to do hand tracking to visualize a phantom arm, fingers, or other ligaments that may have been amputated, and using the phantom limb to play interactive VR games. We plan to create immersive VR experiences that in the end will hopefully work to help reduce the effects of phantom limb pain.
+                            </p>
+                            <div class="tags"><span>Unity</span><span>Hand Tracking</span><span>VR</span></div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Projects -->
+            <section class="section" id="projects">
+                <div class="section-head reveal">
+                    <span class="section-num">02</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/fem/fem.png" alt="FEM simulation" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/fem.html">FEM</a></h3>
+                            <p>Deformable object simulation including force computation, time integration, and simple collision resolution.</p>
+                            <div class="tags"><span>Simulation</span><span>Physics</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/mesh/simplify_cow.png" alt="Simplified cow mesh" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/mesh.html">Mesh</a></h3>
+                            <p>Processes an OBJ mesh into a half-edge data structure to support loop subdivision, quadric error simplification, and bilateral mesh denoising.</p>
+                            <div class="tags"><span>Geometry</span><span>Half-edge</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/path/cornell_box_full_lighting.png" alt="Path traced Cornell box" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/path.html">Path Tracing</a></h3>
+                            <p>Physically based renderer supporting diffuse, glossy specular, mirror reflective, and refractive BRDFs, with direct + indirect lighting and Russian Roulette path termination.</p>
+                            <div class="tags"><span>C++</span><span>Rendering</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/veggie/Screenshot 2024-03-10 at 6.54.52 PM.png" alt="Snowy Veggie Tales scene" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/veggie.html">Veggie Tales Rendering</a></h3>
+                            <p>Snowy Veggie Tales scene with a skybox, crepuscular rays, OBJ parsing, procedurally generated terrain, and bezier curves.</p>
+                            <div class="tags"><span>C++</span><span>OpenGL</span></div>
+                            <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/suburbiaexe/final-veggies"><i class="fab fa-github" aria-hidden="true"></i> Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/pano/panorama_5_cylindrical.png" alt="Stitched panorama" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/pano.html">Panorama Stitching</a></h3>
+                            <p>Automated feature matching, warping, and image stitching to create panoramas in Python.</p>
+                            <div class="tags"><span>Python</span><span>Computer Vision</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/poisson/poisson_res_img01.jpg" alt="Poisson blended image" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/poisson.html">Poisson Image Blending</a></h3>
+                            <p>Poisson blending of a source and target image according to a mask, plus videos blended frame by frame with the same technique.</p>
+                            <div class="tags"><span>Computational Photography</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/hdr/durand 2.png" alt="Tone mapped HDR image" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/hdr.html">High Dynamic Range Recovery</a></h3>
+                            <p>Implementation of <a href="http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf">Debevec and Malik 1997</a> and <a href="http://people.csail.mit.edu/fredo/PUBLI/Siggraph2002/DurandBilateral.pdf">Durand 2002</a> to recover radiance maps and apply local tone mapping.</p>
+                            <div class="tags"><span>Python</span><span>Computational Photography</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/alignment/result_hero.jpg" alt="Aligned color image" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/alignment.html">Image Alignment</a></h3>
+                            <p>Aligns three color channel exposure images with an image pyramid to create a final color image.</p>
+                            <div class="tags"><span>Python</span><span>Computer Vision</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/ray/my spot.png" alt="Raytraced scene with spot light" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/ray.html">Raytracer</a></h3>
+                            <p>Raytracer supporting shadows, recursive reflections, and texture mapping.</p>
+                            <div class="tags"><span>C++</span><span>Rendering</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb"><img src="images/brush/smudge.png" alt="Smudge brush output" loading="lazy"></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/brush.html">2D Graphics Project</a></h3>
+                            <p>Photoshop-like brushes and convolution-based image filtering.</p>
+                            <div class="tags"><span>C++</span><span>Image Processing</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb project-thumb-icon" aria-hidden="true"><i class="far fa-smile"></i></div>
+                        <div class="project-body">
+                            <h3><a class="stretched" href="project-pages/1430.html">Accessible Trackpad with Face Tracking</a></h3>
+                            <p>Face landmark tracker that drives the cursor, to aid those with mobility issues who may not be able to reliably use a trackpad or mouse.</p>
+                            <div class="tags"><span>Python</span><span>OpenCV</span><span>Accessibility</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Photography -->
+            <section class="section" id="photo">
+                <div class="section-head reveal">
+                    <span class="section-num">03</span>
+                    <h2 class="section-title">Photography</h2>
+                </div>
+                <div class="photo-frame reveal">
+                    <div class="photo-bar">
+                        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="photo-url">hsjphoto.wixsite.com/hannahjphotography</span>
+                        <a class="photo-open" target="_blank" rel="noopener noreferrer" href="https://hsjphoto.wixsite.com/hannahjphotography">Open <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                     </div>
-                <!-- </div> -->
-
-            </div>
-        
-            </div>
-
-            <div class="projects-wrapper" id="projects">
-                <div class="scroll-arrow">
-                    <a href=#photo class="page-scroll">
-                        <i class="fas fa-chevron-down"></i>
-                    </a> 
+                    <iframe src="https://hsjphoto.wixsite.com/hannahjphotography" id="myIframe" title="Hannah Julius Photography" loading="lazy"></iframe>
                 </div>
-                <div class="container" id="photo">
-                    <h1>Here is my photography website!</h1>
-                </div>
-                
-                <div class="container" id="photo">
-                    
-                    <br>
-                    
-                    <iframe src="https://hsjphoto.wixsite.com/hannahjphotography" id="myIframe"></iframe>
-                </div>
+            </section>
+        </main>
 
+        <footer class="footer">
+            <p>Let's connect! <a href="mailto:hannah_julius@brown.edu">hannah_julius@brown.edu</a></p>
+            <div class="nav-social">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hannah-julius/" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:hannah_julius@brown.edu" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/hsjulius" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
             </div>
-
-        
-            
-            <footer>
-                <!-- Footer content goes here -->
-            </footer>
-            
-        
+            <p class="copyright">&copy; <span id="year"></span> Hannah Julius</p>
+        </footer>
     </body>
-
-    </div>
-
 </html>
