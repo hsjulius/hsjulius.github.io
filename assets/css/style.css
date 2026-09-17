@@ -188,14 +188,22 @@ b { color: var(--text); font-weight: 600; }
     position: relative;
     max-width: var(--maxw);
     margin: 0 auto;
-    min-height: min(calc(100vh - 70px), 820px);
+    min-height: min(calc(100vh - 70px), 760px);
     padding: 48px 24px 96px;
-    display: grid;
-    grid-template-columns: minmax(240px, 380px) minmax(0, 1fr);
-    gap: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-text {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.hero-text { max-width: 680px; }
+.hero-text .chips,
+.hero-text .hero-actions { justify-content: center; }
 
 .hero-photo { position: relative; }
 .hero-photo::before {
@@ -319,8 +327,6 @@ b { color: var(--text); font-weight: 600; }
 
 @media (max-width: 860px) {
     .hero {
-        grid-template-columns: 1fr;
-        gap: 40px;
         min-height: auto;
         padding-top: 40px;
     }
