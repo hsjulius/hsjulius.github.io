@@ -40,59 +40,58 @@
                     </p>
 
                     <h3>
-                        Below are example resulting meshes!
+                        Below are example resulting meshes! Drag the slider on each one to compare before and after.
                     </h3>
 
                     
 
   
 
-                        <div class="image-container-subpage">
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/icosahedron.png">
-                                <div class="caption">Icosahedron before loop subdivision</div>
+                        <div class="compare-grid compare-grid-pairs">
+                        <figure class="compare">
+                            <div class="compare-frame" style="--pos: 50%">
+                                <img class="compare-before" src="../images/mesh/icosahedron.png" alt="Icosahedron mesh before subdivision">
+                                <img class="compare-after" src="../images/mesh/subdivide_icosahedron_4.png" alt="Icosahedron after 4 iterations of loop subdivision">
+                                <span class="compare-label compare-label-before">Original</span>
+                                <span class="compare-label compare-label-after">Subdivided</span>
+                                <span class="compare-handle" aria-hidden="true"></span>
+                                <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare original and subdivided" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                             </div>
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/subdivide_icosahedron_4.png">
-                                <div class="caption">Icosahedron after 4 iterations of loop subdivision</div>
-                
-                        </div>
-                        <br>
-
-                        <div class="image-container-subpage">
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/sphere.png" >
-                                <div class="caption">Sphere before quadric error simplification</div>
+                            <figcaption class="caption">Icosahedron before and after 4 iterations of loop subdivision</figcaption>
+                        </figure>
+                        <figure class="compare">
+                            <div class="compare-frame" style="--pos: 50%">
+                                <img class="compare-before" src="../images/mesh/sphere.png" alt="Sphere mesh before simplification">
+                                <img class="compare-after" src="../images/mesh/simplify_sphere_full.png" alt="Sphere mesh after quadric error simplification">
+                                <span class="compare-label compare-label-before">Original</span>
+                                <span class="compare-label compare-label-after">Simplified</span>
+                                <span class="compare-handle" aria-hidden="true"></span>
+                                <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare original and simplified" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                             </div>
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/simplify_sphere_full.png">
-                                <div class="caption">Sphere after quadric error simplification</div>
+                            <figcaption class="caption">Sphere before and after quadric error simplification</figcaption>
+                        </figure>
+                        <figure class="compare">
+                            <div class="compare-frame" style="--pos: 50%">
+                                <img class="compare-before" src="../images/mesh/cow.png" alt="Cow mesh before simplification">
+                                <img class="compare-after" src="../images/mesh/simplify_cow.png" alt="Cow mesh after quadric error simplification">
+                                <span class="compare-label compare-label-before">Original</span>
+                                <span class="compare-label compare-label-after">Simplified</span>
+                                <span class="compare-handle" aria-hidden="true"></span>
+                                <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare original and simplified" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                             </div>
-                        
-                        </div>
-
-                        <div class="image-container-subpage">
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/cow.png" >
-                                <div class="caption">Cow before quadric error simplification</div>
+                            <figcaption class="caption">Cow before and after quadric error simplification (wow! what a simple cow!)</figcaption>
+                        </figure>
+                        <figure class="compare">
+                            <div class="compare-frame" style="--pos: 50%">
+                                <img class="compare-before" src="../images/mesh/noisy_bunny1.png" alt="Very noisy bunny mesh">
+                                <img class="compare-after" src="../images/mesh/denoise_bunny1.png" alt="Bunny mesh after bilateral mesh denoising">
+                                <span class="compare-label compare-label-before">Noisy</span>
+                                <span class="compare-label compare-label-after">Denoised</span>
+                                <span class="compare-handle" aria-hidden="true"></span>
+                                <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare noisy and denoised" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                             </div>
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/simplify_cow.png">
-                                <div class="caption">Cow after quadric error simplification (wow! what a simple cow!)</div>
-                            </div>
-                        
-                        </div>
-
-                        <div class="image-container-subpage">
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/noisy_bunny1.png" >
-                                <div class="caption">Super noisy bunny</div>
-                            </div>
-                            <div class="image-box-subpage">
-                                <img src="../images/mesh/denoise_bunny1.png">
-                                <div class="caption">Bunny with no more noise, thanks to bilateral mesh denoising :D</div>
-                            </div>
-                        
+                            <figcaption class="caption">Super noisy bunny, then no more noise thanks to bilateral mesh denoising :D</figcaption>
+                        </figure>
                         </div>
                         <br><br>
 

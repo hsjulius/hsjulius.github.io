@@ -39,40 +39,47 @@
                     </p>
 
                     <h3>
-                        Here are some blended image results!
+                        Here are some blended image results! Drag the slider to compare each target image with the blended result.
                     </h3>
 
-                    <div class="image-container-subpage">
-                        <div class="image-box-subpage">
-                            <img src="../images/poisson/source_01.jpg" width="27%">
-                            <img src="../images/poisson/target_01.jpg" width="27%">
-                            <img src="../images/poisson/laplacian_res_img01.jpg" width="27%">
-                            <div class="caption">Image Set 1</div>
+                    <div class="compare-grid">
+                    <figure class="compare" style="max-width: 250px">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/poisson/target_01.jpg" alt="Target image before blending">
+                            <img class="compare-after" src="../images/poisson/laplacian_res_img01.jpg" alt="Result after blending the source into the target">
+                            <span class="compare-label compare-label-before">Target</span>
+                            <span class="compare-label compare-label-after">Blended</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare target and blended" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                         </div>
-                    </div>
-                    <br>
-
-                    <div class="image-container-subpage">
-                        <div class="image-box-subpage">
-                            <img src="../images/poisson/source_03.jpg" width="27%">
-                            <img src="../images/poisson/target_03.jpg" width="27%">
-                            <img src="../images/poisson/res_img03.jpg" width="27%">
-                            <div class="caption">Image Set 2</div>
+                        <div class="compare-source"><img src="../images/poisson/source_01.jpg" alt="Source region pasted into the target image"><span>Source</span></div>
+                        <figcaption class="caption">Image Set 1</figcaption>
+                    </figure>
+                    <figure class="compare" style="max-width: 500px">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/poisson/target_03.jpg" alt="Target image before blending">
+                            <img class="compare-after" src="../images/poisson/res_img03.jpg" alt="Result after blending the source into the target">
+                            <span class="compare-label compare-label-before">Target</span>
+                            <span class="compare-label compare-label-after">Blended</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare target and blended" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                         </div>
-                    </div>
-                    <br>
-
-                    <div class="image-container-subpage">
-                        <div class="image-box-subpage">
-                            <img src="../images/poisson/source_04.jpg" width="27%">
-                            <img src="../images/poisson/target_04.jpg" width="27%">
-                            <img src="../images/poisson/res_img04.jpg" width="27%">
-                            <div class="caption">Image Set 3</div>
+                        <div class="compare-source"><img src="../images/poisson/source_03.jpg" alt="Source region pasted into the target image"><span>Source</span></div>
+                        <figcaption class="caption">Image Set 2</figcaption>
+                    </figure>
+                    <figure class="compare" style="max-width: 400px">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/poisson/target_04.jpg" alt="Target image before blending">
+                            <img class="compare-after" src="../images/poisson/res_img04.jpg" alt="Result after blending the source into the target">
+                            <span class="compare-label compare-label-before">Target</span>
+                            <span class="compare-label compare-label-after">Blended</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare target and blended" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
                         </div>
+                        <div class="compare-source"><img src="../images/poisson/source_04.jpg" alt="Source region pasted into the target image"><span>Source</span></div>
+                        <figcaption class="caption">Image Set 3</figcaption>
+                    </figure>
                     </div>
-                    <br>
-                    <br>
-
 
                     <!-- <center>
                         <figure>

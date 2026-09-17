@@ -92,6 +92,46 @@
                     <br>
                     <br>
 
+                    <h3>
+                        Drag the slider to compare a single exposure from each set with the final tone mapped image.
+                    </h3>
+
+                    <div class="compare-grid">
+                    <figure class="compare">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/hdr/1_1.png" alt="One exposure from image set 1">
+                            <img class="compare-after" src="../images/hdr/durand 2.png" alt="Durand tone mapped result for image set 1">
+                            <span class="compare-label compare-label-before">Single exposure</span>
+                            <span class="compare-label compare-label-after">Tone mapped</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare single exposure and tone mapped" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
+                        </div>
+                        <figcaption class="caption">Image Set 1</figcaption>
+                    </figure>
+                    <figure class="compare">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/hdr/1_10.jpg" alt="One exposure from image set 2">
+                            <img class="compare-after" src="../images/hdr/durand 3.png" alt="Durand tone mapped result for image set 2">
+                            <span class="compare-label compare-label-before">Single exposure</span>
+                            <span class="compare-label compare-label-after">Tone mapped</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare single exposure and tone mapped" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
+                        </div>
+                        <figcaption class="caption">Image Set 2</figcaption>
+                    </figure>
+                    <figure class="compare">
+                        <div class="compare-frame" style="--pos: 50%">
+                            <img class="compare-before" src="../images/hdr/1_640.jpg" alt="One exposure from image set 3">
+                            <img class="compare-after" src="../images/hdr/durand.png" alt="Durand tone mapped result for image set 3">
+                            <span class="compare-label compare-label-before">Single exposure</span>
+                            <span class="compare-label compare-label-after">Tone mapped</span>
+                            <span class="compare-handle" aria-hidden="true"></span>
+                            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare single exposure and tone mapped" oninput="this.parentNode.style.setProperty('--pos', this.value + '%')">
+                        </div>
+                        <figcaption class="caption">Image Set 3</figcaption>
+                    </figure>
+                    </div>
+
                     <!-- <center>
                         <figure>
                             <img src="images/hdr/1_1.png" style="width:12%">
