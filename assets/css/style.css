@@ -83,11 +83,22 @@ b { color: var(--text); font-weight: 600; }
         radial-gradient(1000px circle at 50% 115%, rgba(164, 92, 126, 0.22), transparent 60%);
 }
 
-.gradient-text {
-    background: linear-gradient(100deg, #d9703c, var(--accent) 55%, #7d3f8c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+/* Name with a hand-drawn underline instead of gradient text */
+.name {
+    position: relative;
+    display: inline-block;
+    color: var(--accent);
+    white-space: nowrap;
+}
+.name svg {
+    position: absolute;
+    left: -1%;
+    bottom: -0.14em;
+    width: 102%;
+    height: 0.18em;
+    overflow: visible;
+    fill: var(--accent-2);
+    opacity: 0.75;
 }
 
 /* -------------------------------------------  Nav  ----------------------------------------------------- */
@@ -203,7 +214,12 @@ b { color: var(--text); font-weight: 600; }
     align-items: center;
 }
 .hero-text .chips,
-.hero-text .hero-actions { justify-content: center; }
+.hero-text .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 
 .hero-photo { position: relative; }
 .hero-photo::before {
@@ -232,15 +248,14 @@ b { color: var(--text); font-weight: 600; }
 .eyebrow {
     font-family: var(--font-mono);
     font-size: 13px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: var(--accent);
     margin: 0 0 12px;
 }
 
 .hero h1 {
     font-family: var(--font-display);
-    font-size: clamp(40px, 6vw, 68px);
+    font-size: clamp(32px, 4.4vw, 50px);
     line-height: 1.05;
     font-weight: 600;
     letter-spacing: -0.01em;
@@ -252,7 +267,7 @@ b { color: var(--text); font-weight: 600; }
     margin: 0 0 16px;
 }
 .hero-text .lede {
-    font-size: 18px;
+    font-size: 17px;
     color: var(--text);
 }
 
